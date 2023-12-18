@@ -108,3 +108,9 @@ kubectl top pods
 | nestjs-metrics-prometheus-pushgateway-56b44d5b8d-qlfg5   | 1m         | 17Mi          |
 | nestjs-metrics-prometheus-server-66d9d8f87f-sdcg5        | 4m         | 176Mi         |
 
+![image](https://github.com/sys-internals/nestjs-metrics/assets/142703856/73f1e168-2691-43f4-a61b-d8c48e715624)
+
+![image](https://github.com/sys-internals/nestjs-metrics/assets/142703856/ffecf08f-094c-434f-b89b-4f4534c57671)
+
+
+
