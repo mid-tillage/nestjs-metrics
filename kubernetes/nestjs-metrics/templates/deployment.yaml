@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nestjs-metrics
+  name: nestjs-metrics
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nestjs-metrics
+  template:
+    metadata:
+      labels:
+        app: nestjs-metrics
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /metrics
+        prometheus.io/port: "3000"
+    spec:
+      containers:
+        - name: nestjs-metrics-container
+          image: nestjs-metrics:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
